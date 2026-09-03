@@ -8,7 +8,6 @@ import {
   Code2,
   Sparkles,
   Braces,
-  Workflow,
   Layout,
   Search,
   GraduationCap,
@@ -571,6 +570,3 @@ function Portfolio() {
     </ThemeProvider>
   );
 }
-
-/* eslint-disable-next-line no-unused-vars */
-const _unused = { Workflow };
