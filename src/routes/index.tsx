@@ -25,7 +25,7 @@ import { Reveal } from "@/components/portfolio/Reveal";
 const GITHUB_URL = "https://github.com/arish096";
 const LEETCODE_URL = "https://leetcode.com/u/arish096";
 const EMAIL = "arishislam096@gmail.com";
-const PHONE = "+91 6206070859";
+const PHONE = "+91 9973397023";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -499,7 +499,7 @@ function Portfolio() {
                   href: `mailto:${EMAIL}`,
                   external: false,
                 },
-                { icon: Phone, label: "Phone", value: PHONE, href: `tel:+916206070859`, external: false },
+                { icon: Phone, label: "Phone", value: PHONE, href: `tel:${PHONE.replace(/\s/g, "")}`, external: false },
                 {
                   icon: Github,
                   label: "GitHub",
@@ -559,6 +559,12 @@ function Portfolio() {
                 className="inline-flex items-center gap-2 hover:text-foreground"
               >
                 <Mail className="size-4" aria-hidden="true" /> Email
+              </a>
+              <a
+                href={`tel:${PHONE.replace(/\s/g, "")}`}
+                className="inline-flex items-center gap-2 hover:text-foreground"
+              >
+                <Phone className="size-4" aria-hidden="true" /> {PHONE}
               </a>
               <a href="#top" className="inline-flex items-center gap-2 hover:text-foreground">
                 Back to top
