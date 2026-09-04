@@ -1,34 +1,199 @@
-# Arish's Midnight Portfolio
+# 🌐 Arish Islam — Personal Portfolio
 
-Create a polished, production-quality personal portfolio website for Arish Islam. Use the selected Option 1 “Midnight AI” visual direction: premium dark futuristic aesthetic, deep black/navy background, electric blue and purple gradients, subtle glow, grid/mesh effects, tasteful motion, glassmorphism cards, strong typography, and excellent responsive behavior on mobile/tablet/desktop. Build the site as a complete multi-section single-page portfolio with smooth navigation and scroll animations. Include a persistent theme/color switcher that lets visitors change the accent theme across the whole site, with these presets: Midnight AI (blue + purple default), Aurora Purple (purple + pink), Ocean Blue (cyan + blue), Cyber Green (green + cyan), Sunset Orange (orange + pink), and Rose Pink (pink + purple). The selected theme should persist during the visit and update buttons, gradients, highlights, borders, glows, and interactive states consistently. Use the resume as the authoritative source for personal information and do not invent experience, technologies, achievements, or project details beyond what it supports. Hero: Arish Islam, aspiring Web Developer & AI Professional, with a concise professional introduction based on the resume; prominent buttons for Explore My Work, GitHub, and contact. Sections: About, Skills, Featured Projects, Research & Insights, Problem Solving/DSA, Education, Languages, and Contact. Featured projects must include MedVitals AI – AI Medical Assistant, ThumbForge – AI YouTube Thumbnail Generator, and Prompt Engineering Projects, using the resume descriptions accurately. The Research & Insights section should be a dedicated professional area for future AI/web research, experiments, technical explorations, prompt experiments, and case studies; clearly label it as a growing/research section and do not fabricate completed research papers or publications. Skills should accurately reflect the resume: C++ (DSA), basic programming concepts, Python, HTML5, CSS3, AI Prompt Engineering, Prompt Design, AI Workflow Creation & Automation, Website Design, Basic UI/UX Design Principles, Data Structures & Algorithms, Logical Problem Solving, Content Structuring, Internet Research, and Digital Tools. Education should show Class XI Science Stream at Islamiya Urdu Academy, Bihar (2026–Present) and Class X at Vatayan School, Bihar (2026), CBSE, 86%. Languages: Hindi native, English professional working proficiency, French basic/intermediate. Include GitHub and LeetCode profile links from the resume, and contact details from the resume. Add a professional footer. Make accessibility, semantic HTML, keyboard navigation, contrast, performance, and mobile responsiveness a priority. Avoid fake counters or unsupported claims; if using stats, derive them only from the resume or use neutral labels rather than invented numbers. Do not require an uploaded portrait; use an abstract AI/developer visual treatment in the hero unless a portrait is later provided.
+> **Aspiring Web Developer & AI Professional**
+> Building AI-assisted tools, clean web interfaces, and practical digital solutions.
 
-Quoting the user: "option 1 aur uss portfolio mein colors ka option rakhna"
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-0A66C2?style=for-the-badge)](https://arish-islam-portfolio.lovable.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Arish096-181717?style=for-the-badge\&logo=github)](https://github.com/arish096)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Arish096-FFA116?style=for-the-badge\&logo=leetcode)](https://leetcode.com/u/arish096/)
 
-Attachment details: Use the uploaded one-page Arish Islam resume as the authoritative content source. It contains contact details, career objective, education, three project areas (MedVitals AI, ThumbForge, Prompt Engineering Projects), technical skills, and Hindi/English/French proficiency. Preserve the resume's factual claims and do not invent additional credentials.The section currently called “Research & Insights” should NOT imply academic research papers or publications. Rename/reframe it as a practical “Tools I Use” / “Tech & Tools” section that explains which tools and technologies the user uses, based strictly on the resume: C++ (DSA), Python, HTML5, CSS3, Streamlit, Lovable, AI Prompt Engineering, Prompt Design, AI Workflow Creation & Automation, Website Design, Basic UI/UX, Data Structures & Algorithms, Logical Problem Solving, Content Structuring, Internet Research, and Digital Tools. Where a tool is explicitly mentioned in the project descriptions, include Streamlit for MedVitals AI and Lovable for ThumbForge; do not claim unsupported tools. Also fix the social/contact links so GitHub opens the exact profile from the resume (github.com/arish096) and the email opens the exact email address from the resume (arishislam096@gmail.com). Make GitHub and email links visibly clickable and ensure they work in both hero/contact areas. Keep the Midnight AI theme and color switcher unchanged. Do not invent a LinkedIn URL or any other contact information not present in the resume.
+---
 
-Quoting the user: "main ye keh raha hun ki research ka matlab hai ki main konsa tools use krta hun aur github kyu nahi open ho raha hai aur email"
+## 👋 About the Portfolio
 
-Attachment details: Use the uploaded Arish Islam resume as the source of truth. It explicitly lists GitHub as github.com/arish096 and email as arishislam096@gmail.com, and explicitly mentions Streamlit for MedVitals AI and Lovable for ThumbForge. It also lists AI Prompt Engineering, AI Workflow Creation & Automation, HTML5, CSS3, C++ (DSA), Python, Website Design, Basic UI/UX, DSA, Problem Solving, Internet Research, and Digital Tools.
+This repository contains my personal portfolio website, created to showcase my **technical skills, AI projects, problem-solving practice, learning journey, and digital projects**.
 
-This project was built with [Lovable](https://lovable.dev).
+The portfolio represents my approach to learning by building — combining programming fundamentals, web development, AI prompt engineering, and structured problem solving to create practical projects.
 
-**Live app**: https://arish-islam-portfolio.lovable.app
+🔗 **Live Portfolio:**
+https://arish-islam-portfolio.lovable.app/
 
-## Build with Lovable
+---
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6d60d9c6-898d-4693-a6d1-d0d99a4c290f).
+## 🚀 What You'll Find
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+### 💻 Programming
 
-## Development
+* C++
+* Python
+* Basic Programming Concepts
+* Data Structures & Algorithms
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### 🌐 Web & Design
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+* HTML5
+* CSS3
+* Website Design
+* Basic UI/UX Principles
+
+### 🤖 AI & Prompt Engineering
+
+* AI Prompt Engineering
+* Prompt Design
+* AI Workflow Creation
+* AI-assisted Automation
+* Content Structuring
+
+### 🧠 Problem Solving & Research
+
+* Data Structures & Algorithms
+* Logical Problem Solving
+* Internet Research
+* Digital Tools
+* Structured Thinking
+
+---
+
+## 📌 Featured Projects
+
+### 🏥 MedVitals AI
+
+An AI-assisted medical information project designed to provide structured responses through an interactive interface.
+
+**Technologies:**
+
+* Python
+* Streamlit
+* AI Prompt Engineering
+
+---
+
+### 🎨 ThumbForge
+
+An AI-powered YouTube thumbnail concept generator focused on prompt-driven creative workflows and fast content ideation.
+
+**Built With:**
+
+* Lovable
+* AI Prompt Engineering
+* Website Design
+
+---
+
+### 🧩 Prompt Engineering Projects
+
+A collection of experiments focused on **prompt design, AI workflows, content structuring, and automation**.
+
+These projects explore how structured prompts can be used to improve repetitive digital workflows and AI-assisted productivity.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technologies                           |
+| --------------- | -------------------------------------- |
+| Programming     | C++, Python                            |
+| Web             | HTML5, CSS3                            |
+| AI              | Prompt Engineering, Prompt Design      |
+| AI Workflows    | AI Workflow Creation & Automation      |
+| Development     | Streamlit, Lovable                     |
+| Problem Solving | DSA, Logical Problem Solving           |
+| Research        | Internet Research, Content Structuring |
+| Tools           | Git, GitHub, VS Code                   |
+
+---
+
+## 📚 DSA & Problem Solving
+
+I regularly practice **Data Structures & Algorithms in C++** to strengthen programming fundamentals and logical thinking.
+
+My practice focuses on understanding concepts rather than simply collecting solved-problem numbers.
+
+**Current focus areas include:**
+
+* Arrays
+* Strings
+* Recursion
+* Complexity Analysis
+* Core DSA Concepts
+
+Practice profiles:
+
+* **GitHub:** https://github.com/arish096
+* **LeetCode:** https://leetcode.com/u/arish096/
+
+---
+
+## 🎯 Current Focus
+
+I'm currently focused on:
+
+* Strengthening C++ and DSA fundamentals
+* Improving Python programming
+* Learning modern web development
+* Exploring AI-assisted development
+* Building practical AI workflows
+* Improving prompt engineering
+* Creating useful projects while learning
+
+---
+
+## 🌱 Learning Philosophy
+
+> **Learn → Build → Experiment → Improve**
+
+I believe the best way to learn technology is by turning concepts into real projects.
+
+My portfolio is continuously evolving as I learn new technologies, experiment with AI workflows, and build new projects.
+
+---
+
+## 🎓 Education
+
+**Class XI — Science Stream**
+Islamiya Urdu Academy, Bihar
+2026 – Present
+
+**Class X — CBSE**
+Vatayan School, Bihar
+2026 — **86%**
+
+---
+
+## 🗣️ Languages
+
+* Hindi — Native
+* English — Professional Working Proficiency
+* French — Basic / Intermediate
+
+---
+
+## 📬 Connect With Me
+
+If you'd like to explore my projects, collaborate on a learning project, or share feedback:
+
+🌐 **Portfolio:**
+https://arish-islam-portfolio.lovable.app/
+
+💻 **GitHub:**
+https://github.com/arish096
+
+🧩 **LeetCode:**
+https://leetcode.com/u/arish096/
+
+📧 **Email:**
+[arishislam096@gmail.com](mailto:arishislam096@gmail.com)
+
+---
+
+## ⭐ Portfolio
+
+If you find my projects interesting, feel free to explore my repositories and follow my learning journey.
+
+**Thanks for visiting!**
+
+---
+
+<p align="center">
+  <b>Built with curiosity, consistency, and a passion for technology.</b>
+</p>
