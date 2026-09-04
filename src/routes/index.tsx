@@ -25,7 +25,7 @@ import { Reveal } from "@/components/portfolio/Reveal";
 const GITHUB_URL = "https://github.com/arish096";
 const LEETCODE_URL = "https://leetcode.com/u/arish096";
 const EMAIL = "arishislam096@gmail.com";
-const PHONE = "+91 6206070859";
+const PHONE = "+91 9973397023";
 
 export const Route = createFileRoute("/")({
   head: () => ({
