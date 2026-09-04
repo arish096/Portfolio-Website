@@ -69,13 +69,13 @@ The portfolio focuses on:
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git [[clone YOUR_REPOSITORY_URL](https://github.com/arish096/Portfolio-Website)]
 ```
 
 Navigate to the project:
 
 ```bash
-cd YOUR_REPOSITORY_NAME
+cd Portfolio-Website
 ```
 
 Install dependencies:
