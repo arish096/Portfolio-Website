@@ -560,6 +560,12 @@ function Portfolio() {
               >
                 <Mail className="size-4" aria-hidden="true" /> Email
               </a>
+              <a
+                href={`tel:${PHONE.replace(/\s/g, "")}`}
+                className="inline-flex items-center gap-2 hover:text-foreground"
+              >
+                <Phone className="size-4" aria-hidden="true" /> {PHONE}
+              </a>
               <a href="#top" className="inline-flex items-center gap-2 hover:text-foreground">
                 Back to top
               </a>
