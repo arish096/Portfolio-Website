@@ -499,7 +499,7 @@ function Portfolio() {
                   href: `mailto:${EMAIL}`,
                   external: false,
                 },
-                { icon: Phone, label: "Phone", value: PHONE, href: `tel:+916206070859`, external: false },
+                { icon: Phone, label: "Phone", value: PHONE, href: `tel:${PHONE.replace(/\s/g, "")}`, external: false },
                 {
                   icon: Github,
                   label: "GitHub",
