@@ -16,6 +16,7 @@ import {
   Stethoscope,
   Image as ImageIcon,
   Brain,
+  Download,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
