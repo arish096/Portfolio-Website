@@ -16,6 +16,7 @@ import {
   Stethoscope,
   Image as ImageIcon,
   Brain,
+  Download,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
@@ -207,6 +208,14 @@ function Portfolio() {
                   >
                     <Mail className="size-4" aria-hidden="true" />
                     Contact Me
+                  </a>
+                  <a
+                    href="/resume.pdf"
+                    download="Arish-Islam-Resume.pdf"
+                    className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
+                  >
+                    <Download className="size-4" aria-hidden="true" />
+                    Download Resume
                   </a>
                 </div>
               </Reveal>
