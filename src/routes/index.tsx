@@ -187,13 +187,14 @@ function Portfolio() {
                   <a
                     href="/resume.pdf"
                     download="Arish-Islam-Resume.pdf"
-                    className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
+                    className="glow-ring inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold text-accent-foreground shadow-lg shadow-accent/20 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-accent/30"
+                    style={{ backgroundImage: "var(--gradient-accent)" }}
                   >
                     <Download className="size-4" aria-hidden="true" />
                     Download Resume
                   </a>
                   <a
-                    href={`mailto:${EMAIL}`}
+                    href="#contact"
                     className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
                   >
                     <Mail className="size-4" aria-hidden="true" />
