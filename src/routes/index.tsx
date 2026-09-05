@@ -186,21 +186,12 @@ function Portfolio() {
 
                 <div className="mt-9 flex flex-wrap gap-3">
                   <a
-                    href="#projects"
-                    className="glow-ring inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5"
-                    style={{ backgroundImage: "var(--gradient-accent)" }}
-                  >
-                    Explore My Work
-                    <ArrowRight className="size-4" aria-hidden="true" />
-                  </a>
-                  <a
-                    href={GITHUB_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/resume.pdf"
+                    download="Arish-Islam-Resume.pdf"
                     className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
                   >
-                    <Github className="size-4" aria-hidden="true" />
-                    GitHub
+                    <Download className="size-4" aria-hidden="true" />
+                    Download Resume
                   </a>
                   <a
                     href={`mailto:${EMAIL}`}
@@ -208,14 +199,6 @@ function Portfolio() {
                   >
                     <Mail className="size-4" aria-hidden="true" />
                     Contact Me
-                  </a>
-                  <a
-                    href="/resume.pdf"
-                    download="Arish-Islam-Resume.pdf"
-                    className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
-                  >
-                    <Download className="size-4" aria-hidden="true" />
-                    Download Resume
                   </a>
                 </div>
               </Reveal>
