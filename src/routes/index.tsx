@@ -130,17 +130,54 @@ const PROJECTS = [
 ];
 
 const TOOLS = [
-  { group: "AI & AI Assistants", items: ["ChatGPT", "Gemini", "Claude", "DeepSeek", "Grok"] },
-  { group: "Research & Intelligence", items: ["Perplexity"] },
   {
-    group: "Automation & Workflows",
-    items: ["n8n", "Prompt Engineering", "AI Workflow Automation"],
+    category: "AI & AI Assistants",
+    description: "AI assistants for coding, content, research, and problem solving.",
+    icon: Bot,
+    items: [
+      { name: "ChatGPT", desc: "AI assistant for coding, content, research, and problem solving." },
+      { name: "Gemini", desc: "AI assistant for coding, research, and multimodal tasks." },
+      { name: "Claude", desc: "AI assistant for reasoning, writing, and analysis." },
+      { name: "DeepSeek", desc: "AI assistant for coding, problem solving, and reasoning." },
+      { name: "Grok", desc: "AI assistant for research, ideas, and problem solving." },
+    ],
   },
   {
-    group: "AI Development & Builders",
-    items: ["Lovable", "Replit", "Emergent AI", "Antigravity"],
+    category: "Research & Intelligence",
+    description: "AI-powered search, research, and document-based learning tools.",
+    icon: Search,
+    items: [
+      { name: "Perplexity", desc: "AI-powered search and research assistant." },
+      { name: "NotebookLM", desc: "Context aware learning and document-based AI insights." },
+      { name: "Google AI Studio", desc: "Prompt experimentation and model testing." },
+    ],
   },
-  { group: "Development Technologies", items: ["Git", "GitHub"] },
+  {
+    category: "Automation & Workflows",
+    description: "Tools for automating tasks and orchestrating AI pipelines.",
+    icon: Workflow,
+    items: [{ name: "n8n", desc: "Workflow automation and AI pipeline orchestration." }],
+  },
+  {
+    category: "AI Development & Builders",
+    description: "AI-powered platforms for building applications and rapid prototyping.",
+    icon: Cpu,
+    items: [
+      { name: "Lovable", desc: "AI-powered web and application development." },
+      { name: "Replit", desc: "AI-assisted coding, prototyping, and development." },
+      { name: "Emergent AI", desc: "AI-powered application building and experimentation." },
+      { name: "Antigravity", desc: "AI-assisted development and experimentation." },
+    ],
+  },
+  {
+    category: "Development Technologies",
+    description: "Core technologies for version control, collaboration, and code hosting.",
+    icon: GitBranch,
+    items: [
+      { name: "Git", desc: "Version control and collaboration." },
+      { name: "GitHub", desc: "Code hosting, repositories, and collaboration." },
+    ],
+  },
 ];
 
 function Portfolio() {
