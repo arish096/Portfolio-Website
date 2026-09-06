@@ -16,6 +16,10 @@ import {
   Image as ImageIcon,
   Brain,
   Download,
+  Bot,
+  Workflow,
+  Cpu,
+  GitBranch,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
@@ -126,17 +130,54 @@ const PROJECTS = [
 ];
 
 const TOOLS = [
-  { group: "AI & AI Assistants", items: ["ChatGPT", "Gemini", "Claude", "DeepSeek", "Grok"] },
-  { group: "Research & Intelligence", items: ["Perplexity"] },
   {
-    group: "Automation & Workflows",
-    items: ["n8n", "Prompt Engineering", "AI Workflow Automation"],
+    category: "AI & AI Assistants",
+    description: "AI assistants for coding, content, research, and problem solving.",
+    icon: Bot,
+    items: [
+      { name: "ChatGPT", desc: "AI assistant for coding, content, research, and problem solving." },
+      { name: "Gemini", desc: "AI assistant for coding, research, and multimodal tasks." },
+      { name: "Claude", desc: "AI assistant for reasoning, writing, and analysis." },
+      { name: "DeepSeek", desc: "AI assistant for coding, problem solving, and reasoning." },
+      { name: "Grok", desc: "AI assistant for research, ideas, and problem solving." },
+    ],
   },
   {
-    group: "AI Development & Builders",
-    items: ["Lovable", "Replit", "Emergent AI", "Antigravity"],
+    category: "Research & Intelligence",
+    description: "AI-powered search, research, and document-based learning tools.",
+    icon: Search,
+    items: [
+      { name: "Perplexity", desc: "AI-powered search and research assistant." },
+      { name: "NotebookLM", desc: "Context aware learning and document-based AI insights." },
+      { name: "Google AI Studio", desc: "Prompt experimentation and model testing." },
+    ],
   },
-  { group: "Development Technologies", items: ["Git", "GitHub"] },
+  {
+    category: "Automation & Workflows",
+    description: "Tools for automating tasks and orchestrating AI pipelines.",
+    icon: Workflow,
+    items: [{ name: "n8n", desc: "Workflow automation and AI pipeline orchestration." }],
+  },
+  {
+    category: "AI Development & Builders",
+    description: "AI-powered platforms for building applications and rapid prototyping.",
+    icon: Cpu,
+    items: [
+      { name: "Lovable", desc: "AI-powered web and application development." },
+      { name: "Replit", desc: "AI-assisted coding, prototyping, and development." },
+      { name: "Emergent AI", desc: "AI-powered application building and experimentation." },
+      { name: "Antigravity", desc: "AI-assisted development and experimentation." },
+    ],
+  },
+  {
+    category: "Development Technologies",
+    description: "Core technologies for version control, collaboration, and code hosting.",
+    icon: GitBranch,
+    items: [
+      { name: "Git", desc: "Version control and collaboration." },
+      { name: "GitHub", desc: "Code hosting, repositories, and collaboration." },
+    ],
+  },
 ];
 
 function Portfolio() {
@@ -337,27 +378,40 @@ function Portfolio() {
             title="Tools I Use"
             lead="AI tools, development platforms, research tools, and technologies I use to build, research, and automate."
           >
-            <ul className="grid gap-6 sm:grid-cols-2">
-              {TOOLS.map((t, i) => (
-                <Reveal as="li" key={t.group} delay={i * 80}>
-                  <div className="glass h-full p-6">
-                    <h3 className="font-display text-sm uppercase tracking-[0.2em] text-accent">
-                      {t.group}
-                    </h3>
-                    <ul className="mt-4 flex flex-wrap gap-2">
-                      {t.items.map((it) => (
-                        <li
-                          key={it}
-                          className="rounded-full bg-secondary px-3.5 py-1.5 text-sm text-secondary-foreground"
-                        >
-                          {it}
-                        </li>
-                      ))}
-                    </ul>
+            <div className="space-y-14">
+              {TOOLS.map((cat, i) => (
+                <Reveal key={cat.category} delay={i * 80}>
+                  <div className="flex items-center gap-4">
+                    <span
+                      className="inline-flex size-11 items-center justify-center rounded-xl text-accent-foreground"
+                      style={{ backgroundImage: "var(--gradient-accent)" }}
+                    >
+                      <cat.icon className="size-5" aria-hidden="true" />
+                    </span>
+                    <div>
+                      <h3 className="font-display text-sm uppercase tracking-[0.2em] text-accent">
+                        {cat.category}
+                      </h3>
+                      <p className="mt-1 text-sm text-muted-foreground">{cat.description}</p>
+                    </div>
                   </div>
+                  <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {cat.items.map((tool, j) => (
+                      <Reveal as="li" key={tool.name} delay={j * 60}>
+                        <div className="glass h-full p-6 transition-transform duration-300 hover:-translate-y-1">
+                          <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-accent">
+                            {tool.name}
+                          </h4>
+                          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                            {tool.desc}
+                          </p>
+                        </div>
+                      </Reveal>
+                    ))}
+                  </ul>
                 </Reveal>
               ))}
-            </ul>
+            </div>
           </Section>
 
           {/* DSA */}
