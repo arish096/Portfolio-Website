@@ -16,6 +16,10 @@ import {
   Image as ImageIcon,
   Brain,
   Download,
+  Bot,
+  Workflow,
+  Cpu,
+  GitBranch,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
