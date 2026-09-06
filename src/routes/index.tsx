@@ -333,9 +333,9 @@ function Portfolio() {
           {/* TOOLS */}
           <Section
             id="tools"
-            eyebrow="Tech & Tools"
-            title="The tools I actually use"
-            lead="A practical look at the languages, platforms and methods behind my projects — Streamlit powers MedVitals AI, and ThumbForge was built with Lovable."
+            eyebrow="Tools I Use"
+            title="Tools I Use"
+            lead="AI tools, development platforms, research tools, and technologies I use to build, research, and automate."
           >
             <ul className="grid gap-6 sm:grid-cols-2">
               {TOOLS.map((t, i) => (
