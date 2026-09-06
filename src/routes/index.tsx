@@ -126,22 +126,17 @@ const PROJECTS = [
 ];
 
 const TOOLS = [
-  { group: "Languages", items: ["C++ (DSA)", "Python", "HTML5", "CSS3"] },
-  { group: "Build & Ship", items: ["Streamlit", "Lovable", "Website Design", "Basic UI/UX"] },
+  { group: "AI & AI Assistants", items: ["ChatGPT", "Gemini", "Claude", "DeepSeek", "Grok"] },
+  { group: "Research & Intelligence", items: ["Perplexity"] },
   {
-    group: "AI Workflow",
-    items: ["AI Prompt Engineering", "Prompt Design", "AI Workflow Creation & Automation"],
+    group: "Automation & Workflows",
+    items: ["n8n", "Prompt Engineering", "AI Workflow Automation"],
   },
   {
-    group: "Thinking & Research",
-    items: [
-      "Data Structures & Algorithms",
-      "Logical Problem Solving",
-      "Content Structuring",
-      "Internet Research",
-      "Digital Tools",
-    ],
+    group: "AI Development & Builders",
+    items: ["Lovable", "Replit", "Emergent AI", "Antigravity"],
   },
+  { group: "Development Technologies", items: ["Git", "GitHub"] },
 ];
 
 function Portfolio() {
