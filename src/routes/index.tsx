@@ -20,6 +20,8 @@ import {
   Workflow,
   Cpu,
   GitBranch,
+  Radar,
+  Headphones,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
