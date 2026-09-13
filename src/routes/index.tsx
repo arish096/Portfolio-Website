@@ -390,6 +390,18 @@ function Portfolio() {
                         </li>
                       ))}
                     </ul>
+                    {p.github && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glass mt-6 inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-semibold underline-offset-4 hover:underline"
+                      >
+                        <Github className="size-4" aria-hidden="true" />
+                        View on GitHub
+                        <ExternalLink className="size-3.5" aria-hidden="true" />
+                      </a>
+                    )}
                   </article>
                 </Reveal>
               ))}
