@@ -20,6 +20,8 @@ import {
   Workflow,
   Cpu,
   GitBranch,
+  Radar,
+  Headphones,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
 import { ThemeProvider } from "@/components/portfolio/theme";
@@ -121,11 +123,34 @@ const PROJECTS = [
     stack: ["Lovable", "AI Prompt Engineering", "Website Design"],
   },
   {
-    icon: Brain,
-    name: "Prompt Engineering Projects",
-    tag: "Prompt Design & Automation",
-    desc: "A set of prompt design and AI workflow experiments exploring structured prompting and automation of repetitive tasks.",
-    stack: ["Prompt Design", "AI Workflow Creation", "Content Structuring"],
+    icon: Radar,
+    name: "AI Radar — Live Flight Tracker",
+    tag: "Live Flight Tracking",
+    desc: "An AI-powered live flight tracking application that visualizes real-world aircraft activity and helps users explore flight locations and movement through an interactive radar-style interface.",
+    stack: [
+      "Live flight tracking",
+      "Interactive radar-style visualization",
+      "Real-world flight data integration",
+      "AI-powered application concept",
+      "Modern interactive web interface",
+    ],
+    github: "https://github.com/arish096/AI-Radar---Live-Flight-Tracker-",
+  },
+  {
+    icon: Headphones,
+    name: "Apple Support AI Agent",
+    tag: "Hiver SDE Intern Take-Home Project",
+    desc: "An AI-powered customer support agent built with Python, NLP, TF-IDF, Logistic Regression, and Streamlit. It classifies support intents, retrieves similar historical cases, generates evidence-grounded replies, and decides whether a request should be AUTO-HANDLED or ESCALATED.",
+    stack: [
+      "Intent classification",
+      "Historical case retrieval",
+      "Evidence-grounded reply generation",
+      "AUTO-HANDLE vs ESCALATE decision system",
+      "Leakage-aware evaluation",
+      "Explainable escalation reasons",
+      "CLI + Streamlit demo",
+    ],
+    github: "https://github.com/arish096/apple-support-ai-agent",
   },
 ];
 
@@ -365,6 +390,18 @@ function Portfolio() {
                         </li>
                       ))}
                     </ul>
+                    {p.github && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="glass mt-6 inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-semibold underline-offset-4 hover:underline"
+                      >
+                        <Github className="size-4" aria-hidden="true" />
+                        View on GitHub
+                        <ExternalLink className="size-3.5" aria-hidden="true" />
+                      </a>
+                    )}
                   </article>
                 </Reveal>
               ))}
