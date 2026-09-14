@@ -255,15 +255,6 @@ function Portfolio() {
                     Download Resume
                   </a>
                   <a
-                    href="/resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
-                  >
-                    <ExternalLink className="size-4" aria-hidden="true" />
-                    View Resume
-                  </a>
-                  <a
                     href="#contact"
                     className="glass inline-flex min-h-12 items-center gap-2 rounded-full px-6 text-sm font-semibold underline-offset-4 hover:underline"
                   >
