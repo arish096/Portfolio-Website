@@ -22,8 +22,10 @@ import {
   GitBranch,
   Radar,
   Headphones,
+  Award,
 } from "lucide-react";
 import heroArt from "@/assets/hero-abstract.jpg";
+import oracleCertificate from "@/assets/Oracle_Certificate.pdf.asset.json";
 import { ThemeProvider } from "@/components/portfolio/theme";
 import { Nav } from "@/components/portfolio/Nav";
 import { Reveal } from "@/components/portfolio/Reveal";
@@ -405,6 +407,40 @@ function Portfolio() {
                   </article>
                 </Reveal>
               ))}
+            </ul>
+          </Section>
+
+          {/* CERTIFICATIONS */}
+          <Section
+            id="certifications"
+            eyebrow="Certifications"
+            title="Certifications"
+          >
+            <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <Reveal as="li">
+                <article className="glass flex h-full flex-col p-7">
+                  <span
+                    className="inline-flex size-12 items-center justify-center rounded-2xl text-accent-foreground"
+                    style={{ backgroundImage: "var(--gradient-accent)" }}
+                  >
+                    <Award className="size-5" aria-hidden="true" />
+                  </span>
+                  <h3 className="mt-5 text-xl font-semibold">
+                    Agentic AI Certified Foundations Associate
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-accent">Oracle University</p>
+                  <p className="mt-4 flex-1 text-sm text-muted-foreground">September 14, 2026</p>
+                  <a
+                    href={oracleCertificate.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="glass mt-6 inline-flex min-h-10 items-center gap-2 rounded-full px-4 text-sm font-semibold underline-offset-4 hover:underline"
+                  >
+                    View Certificate
+                    <ExternalLink className="size-3.5" aria-hidden="true" />
+                  </a>
+                </article>
+              </Reveal>
             </ul>
           </Section>
 
